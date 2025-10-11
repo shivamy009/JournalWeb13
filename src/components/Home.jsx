@@ -236,7 +236,7 @@ export default function Home() {
               </div>
               
               <h3 className="relative z-10 text-xl sm:text-2xl md:text-3xl font-black text-white mb-1 tracking-tight">
-                250K+
+                {stats.loading ? formatNumber(animatedNumbers.articles) : formatNumber(stats.articles)}
               </h3>
               <p className="relative z-10 text-blue-100/90 text-xs sm:text-sm font-semibold">Research Articles</p>
             </div>
@@ -252,7 +252,7 @@ export default function Home() {
               </div>
               
               <h3 className="relative z-10 text-xl sm:text-2xl md:text-3xl font-black text-white mb-1 tracking-tight">
-                500K+
+                {stats.loading ? formatNumber(animatedNumbers.books) : formatNumber(stats.books)}
               </h3>
               <p className="relative z-10 text-purple-100/90 text-xs sm:text-sm font-semibold">Digital Books</p>
             </div>
@@ -268,7 +268,7 @@ export default function Home() {
               </div>
               
               <h3 className="relative z-10 text-xl sm:text-2xl md:text-3xl font-black text-white mb-1 tracking-tight">
-                15K+
+                {stats.loading ? formatNumber(animatedNumbers.journals) : formatNumber(stats.journals)}
               </h3>
               <p className="relative z-10 text-green-100/90 text-xs sm:text-sm font-semibold">Academic Journals</p>
             </div>
